@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script language="JavaScript">
+        var p = "";
+        p = prompt('请输入密码 (本网站需输入密码才可进入):', '');
+        if (p != location.host.split('.')[0]) {
+            alert("密码不正确,无法进入本站!!");
+            window.opener = null;
+            window.close();
+        }
+    </script>
+    </script>
+</head>
+
+<body>
+    hi
+</body>
+
+</html>
