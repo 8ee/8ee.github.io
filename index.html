@@ -13,6 +13,7 @@
         if (p != location.host.split('.')[0]) {
             alert("密码不正确,无法进入本站!!");
             window.opener = null;
+            window.open('', '_self');
             window.close();
         }
     </script>
